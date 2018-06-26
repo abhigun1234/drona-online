@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "postinstall": "ng build --aot --target=production"
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {

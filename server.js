@@ -7,7 +7,8 @@ app.listen(process.env.PORT || 8080);
 //pathLocationStrategy
 app.get('/*',function(req,res)
 {
-
-    res.sendFile(path.join(__dirname + '/dist/index.html'))
+    const index = path.join(__dirname, 'build', 'index.html');
+    //res.sendFile(path.join(__dirname + '/dist/index.html'))
+    res.sendFile(index);
 })
 console.log('hello')

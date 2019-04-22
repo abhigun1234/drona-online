@@ -7,11 +7,13 @@ import { HomeComponent } from './home/home.component';
 import { CourseComponent } from './course/course.component'
 import { VgCoreModule } from 'videogular2/core';
 import { VgControlsModule } from 'videogular2/controls';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CourseComponent
+    CourseComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,MatCardModule,

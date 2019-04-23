@@ -8,20 +8,27 @@ import { CourseComponent } from './course/course.component'
 import { VgCoreModule } from 'videogular2/core';
 import { VgControlsModule } from 'videogular2/controls';
 import { LoginComponent } from './login/login.component';
+import { RegisteruserComponent } from './registeruser/registeruser.component';
+import { AppRoutingModule } from '..//app/app-routing/app-routing.module';
+import {ReactiveFormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CourseComponent,
-    LoginComponent
+    LoginComponent,
+    RegisteruserComponent
   ],
   imports: [
-    BrowserModule,MatCardModule,
-    RouterModule.forRoot([{path:'course',component:CourseComponent},
-    {path:'home',component:HomeComponent},
-    {path:'',component:HomeComponent}]),
+    BrowserModule,
+    MatCardModule,
+  
     VgCoreModule,
-    VgControlsModule
+    VgControlsModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

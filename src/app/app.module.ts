@@ -11,14 +11,17 @@ import { LoginComponent } from './login/login.component';
 import { RegisteruserComponent } from './registeruser/registeruser.component';
 import { AppRoutingModule } from '..//app/app-routing/app-routing.module';
 import {ReactiveFormsModule} from '@angular/forms'
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { CoursedetailsComponent } from './coursedetails/coursedetails.component'
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CourseComponent,
     LoginComponent,
-    RegisteruserComponent
+    RegisteruserComponent,
+    CoursedetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import {FormsModule} from '@angular/forms'
     VgControlsModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

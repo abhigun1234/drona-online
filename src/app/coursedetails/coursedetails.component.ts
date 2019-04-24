@@ -6,7 +6,7 @@ import {CourseService} from '..//course.service'
   styleUrls: ['./coursedetails.component.css']
 })
 export class CoursedetailsComponent implements OnInit {
-
+ courses;
   constructor(private course:CourseService) { }
 
   ngOnInit() {
@@ -17,6 +17,7 @@ export class CoursedetailsComponent implements OnInit {
   this.course.getCourseDetails().subscribe(res=>{
 
     console.log(res)
+    this.courses=res
   })
   }
 

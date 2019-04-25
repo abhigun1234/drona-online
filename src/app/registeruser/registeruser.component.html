@@ -1,8 +1,8 @@
 
 <div class="container">
-  <form  [formGroup]="userForm" (ngSubmit)="onSubmit(userForm.value)" class="form-horizontal" role="form">
+  <form  [formGroup]="userForm" (ngSubmit)="onSubmit(userForm.value)">
     
-    <div class="form-group">
+    <div class="form-group" >
       <label>name</label>
       <input type="text" class="form-control" formControlName="name">
     </div>
@@ -27,11 +27,10 @@
       <label>email</label>
       <input type="text" formControlName="email">
     </div>
-    <div class="form-group">
+    <div>
     <label>birth date</label>
     <input type="date" formControlName="birth_date">
   </div>
     <input type="submit" class="btn btn-primary"> 
 </form>
 </div>
-

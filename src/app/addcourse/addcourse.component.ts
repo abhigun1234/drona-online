@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators ,FormsModule,NgForm} from '@angular/forms'
+
 @Component({
   selector: 'app-addcourse',
   templateUrl: './addcourse.component.html',

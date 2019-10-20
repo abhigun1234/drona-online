@@ -7,7 +7,8 @@ import {CourseComponent} from '..//course/course.component'
 import {CoursedetailsComponent} from '..//coursedetails/coursedetails.component'
 import {AuthGuard} from '..//auth.guard'
 import {DronahomeComponent} from '..//dronahome/dronahome.component'
-const routes: Routes = [{path:"",component:DronahomeComponent}
+import {AddcourseComponent} from '..//addcourse/addcourse.component'
+const routes: Routes = [{path:"",component:AddcourseComponent}
 ,{path:"register",component:RegisteruserComponent}
 ,{path:"home",component:HomeComponent,canActivate:[AuthGuard]}
 ,{path:"course",component:CourseComponent}

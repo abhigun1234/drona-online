@@ -13,12 +13,12 @@ addCourseForm:FormGroup;
     this.addCourseForm=fb.group(
         {
         'name':[null,Validators.required],
-        'fees':[null,Validators.required],
-        'duration':[null,Validators.required],
-        'description':[null,Validators.required],
-        'vedioUrl':[null,Validators.required],
-        'imageUrl':[null,Validators.required]
-      })
+        'phone_no':[null,Validators.required],
+        'city':[null,Validators.required],
+        'country':[null,Validators.required],
+        'email':[null,Validators.email],
+        'birth_date':[null,Validators.required],
+       })
   }
 
   ngOnInit() {

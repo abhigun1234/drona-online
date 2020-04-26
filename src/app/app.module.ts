@@ -25,6 +25,8 @@ import {MatInputModule } from '@angular/material';
 import { MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CoursedetailsComponent,
     DronahomeComponent,
     AdminComponent,
-    AddcourseComponent
+    AddcourseComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     MatMenuModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule
   
   ],
   providers: [AuthGuard,{provide:HTTP_INTERCEPTORS,useClass:HttpinteceptorService,multi:true}],

@@ -3,7 +3,7 @@ const app=express()
 const path=require('path')
 app.use(express.static('./dist/dronaonline'))
 app.listen(process.env.PORT || 8080);
-
+//https://www.youtube.com/watch?v=0bOJjAUXjhI&t=262s
 //pathLocationStrategy
 //https://dronaonlineadmin.herokuapp.com/courses/
 app.get('/*',function(req,res)

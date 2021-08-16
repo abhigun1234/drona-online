@@ -27,6 +27,7 @@ import {MatListModule} from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { MyhomepageComponent } from './myhomepage/myhomepage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     DronahomeComponent,
     AdminComponent,
     AddcourseComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    MyhomepageComponent
   ],
   imports: [
     BrowserModule,
